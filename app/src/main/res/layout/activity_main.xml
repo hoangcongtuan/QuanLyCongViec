@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hoangcongtuan.quanlycongviec.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý công việc hàng tuần"
+        android:textAlignment="center"
+        android:textSize="@dimen/largeSize"
+        android:textColor="@android:color/white"
+        android:background="@color/colorGreen"
+        android:padding="@dimen/textPadding"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công Việc:"
+            android:textSize="@dimen/smallSize"
+            android:layout_margin="@dimen/textMargin"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edtCongViec"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội Dung:"
+            android:layout_margin="@dimen/textMargin"
+            android:textSize="@dimen/smallSize"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNoiDung"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/textMargin"
+            android:gravity="right"
+            android:text="Ngày HT:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/smallSize" />
+
+        <TextView
+            android:id="@+id/tvNgayHT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/textMargin"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/smallSize" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="date" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ HT:"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/smallSize"
+            android:layout_margin="@dimen/textMargin"
+            android:gravity="right"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGioHT"
+            android:layout_margin="@dimen/textMargin"
+            android:textSize="@dimen/smallSize"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTime"
+            android:text="Time"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm CV"
+        android:id="@+id/btnThemCV"
+        android:layout_gravity="center_horizontal|center_vertical" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:text="Danh sách công việc "
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/smallSize" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstCongViec">
+
+    </ListView>
+
+</LinearLayout>
